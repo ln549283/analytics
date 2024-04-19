@@ -3,19 +3,19 @@
     <p class="text-h5 text-center mt-7">LOGO</p>
     <ImportFile />
     <v-card v-if="dashboardStore.headers.length > 0" class="mx-auto" variant="text">
-        <v-list lines="one" ref="sortable_headers" id="sortable-headers">
+      <draggable :itemKey="(item, index) => index" v-model="dashboardStore.headers" class="sortable-list" @end="onDragEnd" group="columns" :move="handleMove">
+        <template #item="{element}">
+          <v-list lines="one">
             <v-list-item
-                v-for="(col, index) in dashboardStore.headers"
-                :key="index"
-                :title="col"
-                color="primary"
-                rounded="xl"
-                class="cursor-grab"
+              :title="element"
+              color="primary"
+              rounded="xl"
+              class="cursor-grab"
             ></v-list-item>
-        </v-list>
-        <ul id="sortable2">
-            <li v-for="(col, index) in dashboardStore.headers" :key=index style="padding:5px;">{{col}}</li>
-        </ul>
+          </v-list>
+        </template>
+        
+      </draggable>
     </v-card>
     <template v-slot:append>
       <p class="text-h5 text-center mt-7">{{ dashboardStore.fileName }}</p>
@@ -24,20 +24,18 @@
 </template>
 
 <script setup>
-import { ref, watch} from 'vue'
+import { ref } from 'vue'
 import { useDashboardStore } from '@/stores/dashboard'
 import ImportFile from './ImportFile.vue'
-import { useSortable } from '@vueuse/integrations/useSortable'
+import Draggable from 'vuedraggable';
 
 const dashboardStore = useDashboardStore()
 
-// const sortable_headers = ref();
+const onDragEnd = () => {
+  // Logique à exécuter lorsque le glisser-déposer est terminé, si nécessaire
+};
 
-watch(async () => dashboardStore.headers.length, async () => {
-    console.info('ok');
-    useSortable('#sortable2', dashboardStore.headers)
-
-
-}, { deep: true });
-
+const handleMove = () => {
+  return false; // Empêche le déplacement des éléments
+};
 </script>
