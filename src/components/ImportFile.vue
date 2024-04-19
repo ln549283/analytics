@@ -4,11 +4,15 @@
             <template v-slot:activator="{ props: activatorProps }">
             <v-btn
                 class="text-none font-weight-regular"
-                prepend-icon=""
-                text="Import File"
                 variant="tonal"
                 v-bind="activatorProps"
-            ></v-btn>
+            >
+                <v-icon class="me-1">
+                    <IconPlus v-if="!dashboardStore.fileName" class="svg"/>
+                    <IconRefresh v-else class="svg"/>
+                </v-icon>
+                Import File
+            </v-btn>
             </template>
 
             <v-card title="Import file">
@@ -42,7 +46,8 @@
   <script setup>
   import { ref } from 'vue'
   import { useDashboardStore } from '@/stores/dashboard'
-  
+  import IconPlus from './icons/IconPlus.vue';
+  import IconRefresh from './icons/IconRefresh.vue';
   const dashboardStore = useDashboardStore()
   
   const dialog = ref(false)
@@ -52,5 +57,9 @@
     fileImported.value = true
     await dashboardStore.setJsonData(event)
   }
-  </script>
-  
+</script>
+<style scoped>
+.svg{
+    fill: rgb(var(--v-theme-primary));
+}
+</style>

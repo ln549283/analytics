@@ -9,7 +9,11 @@ export const useDashboardStore = defineStore('dashboard', () => {
     headers: ref([])
   }
 
-  const getters = {}
+  const getters = {
+    getHeaderIndex(colonne){
+      return this.headers.findIndex(h => h == colonne);
+    }
+  }
 
   const methods = {
     setJsonData(event) {
@@ -30,6 +34,7 @@ export const useDashboardStore = defineStore('dashboard', () => {
           this.headers = this.jsonData.length > 0 ? this.jsonData[0] : [];
 
           resolve(this.jsonData); // Résoudre la promesse avec les données JSON
+          console.log("done");
         };
         reader.onerror = (error) => {
           reject(error); // Rejeter la promesse en cas d'erreur
@@ -39,33 +44,33 @@ export const useDashboardStore = defineStore('dashboard', () => {
     },
 
     triAPlat(colonne) {
+      const indexHeader = this.getHeaderIndex(colonne);
       const occurrencesMap = new Map()
-
-      // Parcourir chaque ligne du tableau de données
       for (let i = 1; i < this.jsonData.length; i++) {
         // Commence à l'indice 1 pour exclure l'en-tête
-        const value = this.jsonData[i][colonne] // Cinquième colonne (index 4)
+        const value = this.jsonData[i][indexHeader]
         if (value) {
           // Assurez-vous que la valeur n'est pas vide
           occurrencesMap.set(value, (occurrencesMap.get(value) || 0) + 1) // Incrémentez le compteur d'occurrences pour cette valeur
         }
       }
       const data = {
-        header: this.jsonData[0][colonne],
+        header: this.jsonData[0][indexHeader],
         data: occurrencesMap
       }
-
       return data
     },
     TriCroise(colonne1, colonne2) {
       const occurrencesMap = new Map()
+      const indexHeader1 = this.getHeaderIndex(colonne1);
+      const indexHeader2 = this.getHeaderIndex(colonne2);
+
 
       for (let i = 1; i < this.jsonData.length; i++) {
         // Commence à l'indice 1 pour exclure l'en-tête
-        const valueColumn1 = this.jsonData[i][colonne1] // colonne à l'index de colonne1
-        const valueColumn2 = this.jsonData[i][colonne2] // colonne à l'index de colonne2
+        const valueColumn1 = this.jsonData[i][this.headers[indexHeader1]]
+        const valueColumn2 = this.jsonData[i][this.headers[indexHeader2]]
         if (valueColumn1 && valueColumn2) {
-          // Assurez-vous que les valeurs ne sont pas vides
           const key = `${valueColumn1}-${valueColumn2}` // Créez une clé unique basée sur les valeurs des colonnes donnnées en parametre
           occurrencesMap.set(key, (occurrencesMap.get(key) || 0) + 1) // Incrémentez le compteur d'occurrences pour cette combinaison de valeurs
         }
