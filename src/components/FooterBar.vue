@@ -16,7 +16,7 @@
 
         <v-col cols="12" md="auto">
             <div class="body-1 font-weight-light pt-6 pt-md-0 text-center">
-                &copy; 2019, made by NEBONNE Loïc
+                &copy; 2024, made by NEBONNE Loïc
             </div>
         </v-col>
       </v-row>
