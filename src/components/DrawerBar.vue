@@ -1,6 +1,7 @@
 <template>
-  <v-navigation-drawer color="grey-lighten-5" width="280" permanent>
-    <p class="text-h5 text-center mt-7">LOGO</p>
+  <v-navigation-drawer color="grey-lighten-5" width="280" permanent>    
+    <p class="font-weight-bold text-h4 text-center mt-7 yellow-accent-2 text-deep-purple-darken-1" style="letter-spacing: 4px!important">Dashics</p>
+    <div class=" border-md ma-auto border-primary" style="width:100px"></div>
     <ImportFile />
     <v-card v-if="dashboardStore.headers.length > 0" class="mx-auto" variant="text">
       <draggable :itemKey="(item, index) => index" v-model="dashboardStore.headers" class="sortable-list" @end="onDragEnd" group="columns" :move="handleMove">
