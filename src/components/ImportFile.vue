@@ -2,17 +2,14 @@
     <div class="pa-4 text-center">
         <v-dialog v-model="dialog" max-width="600">
             <template v-slot:activator="{ props: activatorProps }">
-            <v-btn
-                class="text-none font-weight-regular"
-                variant="tonal"
-                v-bind="activatorProps"
-            >
-                <v-icon class="me-1">
-                    <IconPlus v-if="!dashboardStore.fileName" class="svg"/>
-                    <IconRefresh v-else class="svg"/>
-                </v-icon>
-                Import File
-            </v-btn>
+                <v-btn
+                    class="text-none font-weight-regular"
+                    variant="tonal"
+                    :prepend-icon="!dashboardStore.fileName ? 'mdi-plus' : 'mdi-refresh'"
+                    v-bind="activatorProps"
+                    :text="!dashboardStore.fileName ? 'Import File' : 'Change file'"
+                >
+                </v-btn>
             </template>
 
             <v-card title="Import file">
@@ -46,8 +43,6 @@
   <script setup>
   import { ref } from 'vue'
   import { useDashboardStore } from '@/stores/dashboard'
-  import IconPlus from './icons/IconPlus.vue';
-  import IconRefresh from './icons/IconRefresh.vue';
   const dashboardStore = useDashboardStore()
   
   const dialog = ref(false)
@@ -58,8 +53,3 @@
     await dashboardStore.setJsonData(event)
   }
 </script>
-<style scoped>
-.svg{
-    fill: rgb(var(--v-theme-primary));
-}
-</style>

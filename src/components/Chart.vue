@@ -1,23 +1,51 @@
 <template>
-    <Bar
-        id="my-chart-id"
-        :options="chartOptions"
-        :data="chartData"
-    />
+    <div>
+        <Bar
+            id="my-chart-id"
+            :options="chartOptions"
+            :data="chartData"
+            v-if="type == 'bar'"
+        />
+        <Pie
+            id="my-chart-id"
+            :options="chartOptions"
+            :data="chartData"
+            v-else-if="type == 'pie'"
+        />
+        <Doughnut
+            id="my-chart-id"
+            :options="chartOptions"
+            :data="chartData"
+            v-else-if="type == 'doughnut'"
+        />
+        <PolarArea
+            id="my-chart-id"
+            :options="chartOptions"
+            :data="chartData"
+            v-else-if="type == 'polar'"
+        />
+        <Line
+            id="my-chart-id"
+            :options="chartOptions"
+            :data="chartData"
+            v-else-if="type == 'line'"
+        />
+    </div>
 </template>
   
 <script setup>
 
 import { ref } from 'vue'
 import { useDashboardStore } from '@/stores/dashboard'
-import { Bar } from 'vue-chartjs'
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
-const dashboardStore = useDashboardStore()
+import { Bar, Pie, Doughnut, PolarArea, Line } from 'vue-chartjs'
+import { Chart, registerables } from 'chart.js';
 
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+Chart.register(...registerables);
+const dashboardStore = useDashboardStore()
 
 const props = defineProps({
     colonne: String,
+    type: String,
 });
 
 const result = dashboardStore.triAPlat(props.colonne);
