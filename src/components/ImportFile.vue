@@ -37,9 +37,9 @@
             </v-card-actions>
             </v-card>
         </v-dialog>
-        <v-row class="mt-4 align-center">
-            <v-col>Or</v-col>
-            <v-col>
+        <v-row class="mt-2 align-center">
+            <v-col class="pt-0">Or</v-col>
+            <v-col class="pt-0">
                 <v-btn
                     class="text-none font-weight-regular"
                     variant="tonal"
