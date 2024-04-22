@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import * as XLSX from 'xlsx'
-
+import { dataBody, dataHeader } from '@/data/SampleData'
 export const useDashboardStore = defineStore('dashboard', () => {
   const state = {
     jsonData: ref(null),
@@ -10,58 +10,49 @@ export const useDashboardStore = defineStore('dashboard', () => {
   }
 
   const getters = {
-    getHeaderIndex(colonne){
-      return this.headers.findIndex(h => h == colonne);
+    getHeaderIndex(colonne) {
+      return this.headers.findIndex((h) => h == colonne)
     }
   }
 
   const methods = {
-    setJsonData(event, test=false) {
+    setJsonData(event, test = false) {
       return new Promise((resolve, reject) => {
-        let file = '';
-        if(!test){
-          file = event.target.files[0];
-          this.fileName = file.name;
-        } else {
-          file = 'src/data/sample_file.csv'; // Chemin vers le fichier CSV d'échantillon
-          this.fileName = 'Sample_file.csv';
+        if (test) {
+          this.headers = dataHeader
+
+          this.jsonData = dataBody
+
+          return true
         }
 
-        // Charger le contenu du fichier CSV en tant que blob
-        fetch(file)
-          .then(response => response.blob())
-          .then(blob => {
-            const reader = new FileReader();
-            reader.onload = (e) => {
-              const data = e.target.result;
-              const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+        const file = event.target.files[0]
+        this.fileName = file.name
+        const reader = new FileReader()
+        reader.onload = (e) => {
+          const data = e.target.result
+          const workbook = XLSX.read(new Uint8Array(data), { type: 'array' })
 
-              // Supposons que vous voulez lire la première feuille de calcul
-              const firstSheetName = workbook.SheetNames[0];
-              const worksheet = workbook.Sheets[firstSheetName];
+          // Supposons que vous voulez lire la première feuille de calcul
+          const firstSheetName = workbook.SheetNames[0]
+          const worksheet = workbook.Sheets[firstSheetName]
 
-              // Convertir le contenu de la feuille de calcul en tableau JavaScript
-              this.jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
-              this.headers = this.jsonData.length > 0 ? this.jsonData[0] : [];
+          // Convertir le contenu de la feuille de calcul en tableau JavaScript
+          this.jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 })
+          this.headers = this.jsonData.length > 0 ? this.jsonData[0] : []
 
-              resolve(this.jsonData); // Résoudre la promesse avec les données JSON
-              console.log("done");
-            };
-            reader.onerror = (error) => {
-              reject(error); // Rejeter la promesse en cas d'erreur
-            };
-
-            // Lire le contenu du blob en tant que ArrayBuffer
-            reader.readAsArrayBuffer(blob);
-          })
-          .catch(error => {
-            reject(error);
-          });
-      });
+          resolve(this.jsonData) // Résoudre la promesse avec les données JSON
+          console.log('done')
+        }
+        reader.onerror = (error) => {
+          reject(error) // Rejeter la promesse en cas d'erreur
+        }
+        reader.readAsArrayBuffer(file)
+      })
     },
 
     triAPlat(colonne) {
-      const indexHeader = this.getHeaderIndex(colonne);
+      const indexHeader = this.getHeaderIndex(colonne)
       const occurrencesMap = new Map()
       for (let i = 1; i < this.jsonData.length; i++) {
         // Commence à l'indice 1 pour exclure l'en-tête
@@ -79,9 +70,8 @@ export const useDashboardStore = defineStore('dashboard', () => {
     },
     TriCroise(colonne1, colonne2) {
       const occurrencesMap = new Map()
-      const indexHeader1 = this.getHeaderIndex(colonne1);
-      const indexHeader2 = this.getHeaderIndex(colonne2);
-
+      const indexHeader1 = this.getHeaderIndex(colonne1)
+      const indexHeader2 = this.getHeaderIndex(colonne2)
 
       for (let i = 1; i < this.jsonData.length; i++) {
         // Commence à l'indice 1 pour exclure l'en-tête

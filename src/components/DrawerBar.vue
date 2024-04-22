@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer color="grey-lighten-5" width="280" permanent>    
+  <v-navigation-drawer style="overflow-y: scroll;" color="grey-lighten-5" width="280" permanent>    
     <p class="font-weight-bold text-h4 text-center mt-7 yellow-accent-2 text-deep-purple-darken-1" style="letter-spacing: 4px!important">Dashics</p>
     <div class=" border-md ma-auto border-primary" style="width:100px"></div>
     <ImportFile />
@@ -25,7 +25,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import { useDashboardStore } from '@/stores/dashboard'
 import ImportFile from './ImportFile.vue'
 import Draggable from 'vuedraggable';
