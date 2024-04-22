@@ -16,30 +16,47 @@ export const useDashboardStore = defineStore('dashboard', () => {
   }
 
   const methods = {
-    setJsonData(event) {
+    setJsonData(event, test=false) {
       return new Promise((resolve, reject) => {
-        const file = event.target.files[0];
-        this.fileName = file.name;
-        const reader = new FileReader();
-        reader.onload = (e) => {
-          const data = e.target.result;
-          const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
-    
-          // Supposons que vous voulez lire la première feuille de calcul
-          const firstSheetName = workbook.SheetNames[0];
-          const worksheet = workbook.Sheets[firstSheetName];
-    
-          // Convertir le contenu de la feuille de calcul en tableau JavaScript
-          this.jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
-          this.headers = this.jsonData.length > 0 ? this.jsonData[0] : [];
+        let file = '';
+        if(!test){
+          file = event.target.files[0];
+          this.fileName = file.name;
+        } else {
+          file = 'src/data/sample_file.csv'; // Chemin vers le fichier CSV d'échantillon
+          this.fileName = 'Sample_file.csv';
+        }
 
-          resolve(this.jsonData); // Résoudre la promesse avec les données JSON
-          console.log("done");
-        };
-        reader.onerror = (error) => {
-          reject(error); // Rejeter la promesse en cas d'erreur
-        };
-        reader.readAsArrayBuffer(file);
+        // Charger le contenu du fichier CSV en tant que blob
+        fetch(file)
+          .then(response => response.blob())
+          .then(blob => {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+              const data = e.target.result;
+              const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+
+              // Supposons que vous voulez lire la première feuille de calcul
+              const firstSheetName = workbook.SheetNames[0];
+              const worksheet = workbook.Sheets[firstSheetName];
+
+              // Convertir le contenu de la feuille de calcul en tableau JavaScript
+              this.jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+              this.headers = this.jsonData.length > 0 ? this.jsonData[0] : [];
+
+              resolve(this.jsonData); // Résoudre la promesse avec les données JSON
+              console.log("done");
+            };
+            reader.onerror = (error) => {
+              reject(error); // Rejeter la promesse en cas d'erreur
+            };
+
+            // Lire le contenu du blob en tant que ArrayBuffer
+            reader.readAsArrayBuffer(blob);
+          })
+          .catch(error => {
+            reject(error);
+          });
       });
     },
 
