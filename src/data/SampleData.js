@@ -12,9 +12,9 @@ export const dataHeader = [
   '2. Sur ces sujets comment situez-vous votre situation actuelle sur une échelle de 1 à 4 ? [Element 1]',
   '2. Sur ces sujets comment situez-vous votre situation actuelle sur une échelle de 1 à 4 ? [Element 2]',
   '2. Sur ces sujets comment situez-vous votre situation actuelle sur une échelle de 1 à 4 ? [Element 3]',
-  'Depuis combien de temps habitez-vous en Gironde ?',
-  'De 0 à 10, comment notez-vous les opticiens de Gironde ?',
-  'Comment évaluez-vous les opticiens de Gironde ?',
+  'Depuis combien de temps habitez-vous à la Réunion ?',
+  'De 0 à 10, comment notez-vous les pharmaciens de la Réunion ?',
+  'Comment évaluez-vous les pharmaciens de la Réunion ?',
   'Lieu de réponse au questionnaire',
   'src/assets/sample_file.csv'
 ]
@@ -34,9 +34,9 @@ export const dataBody = [
     '2. Sur ces sujets comment situez-vous votre situation actuelle sur une échelle de 1 à 4 ? [Element 1]',
     '2. Sur ces sujets comment situez-vous votre situation actuelle sur une échelle de 1 à 4 ? [Element 2]',
     '2. Sur ces sujets comment situez-vous votre situation actuelle sur une échelle de 1 à 4 ? [Element 3]',
-    'Depuis combien de temps habitez-vous en Gironde ?',
-    'De 0 à 10, comment notez-vous les opticiens de Gironde ?',
-    'Comment évaluez-vous les opticiens de Gironde ?',
+    'Depuis combien de temps habitez-vous à la Réunion ?',
+    'De 0 à 10, comment notez-vous les pharmaciens de la Réunion ?',
+    'Comment évaluez-vous les pharmaciens de la Réunion ?',
     'Lieu de réponse au questionnaire'
   ],
   [
@@ -375,7 +375,7 @@ export const dataBody = [
     2,
     'Depuis toujours',
     3,
-    'Bon accueil des opticiens et bons conseils',
+    'Bon accueil des pharmaciens et bons conseils',
     'Travail'
   ],
   [
@@ -564,7 +564,7 @@ export const dataBody = [
     'De 5 à 10 ans',
     10,
     'Accueil\\nConseil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33550,
@@ -717,7 +717,7 @@ export const dataBody = [
     5,
     'Cliente depuis plusieurs années, toujours satisfaite à chaque passage , que ce soit pour moi personnellement ou pour mes 3 filles ainsi que mon mari',
     ' que du positif à tous points de vue!',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     3300,
@@ -736,7 +736,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     'Accueil conseils qualité et les délais .',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -755,7 +755,7 @@ export const dataBody = [
     'Moins de 5 ans',
     6,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -774,7 +774,7 @@ export const dataBody = [
     'Plus de 10 ans',
     8,
     'Accueil  conseil professionnalisme et sourire. ..',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33800,
@@ -793,7 +793,7 @@ export const dataBody = [
     'Depuis toujours',
     3,
     'Accueil et qualité des conseils (Jessica)',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33530,
@@ -812,7 +812,7 @@ export const dataBody = [
     'Depuis toujours',
     5,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33110,
@@ -831,7 +831,7 @@ export const dataBody = [
     'Depuis toujours',
     5,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33200,
@@ -850,7 +850,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     "l'écoute, les conseils, la qualité du service, la gentillesse du personnel",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33700,
@@ -869,7 +869,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     'Accueil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -888,7 +888,7 @@ export const dataBody = [
     'Depuis toujours',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33300,
@@ -907,7 +907,7 @@ export const dataBody = [
     'Depuis toujours',
     3,
     'Il y a rien  dire les personnels son tous chaleureux ainsi que de bon conseil.',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -926,7 +926,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     'Très bonne accueil !',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33100,
@@ -945,7 +945,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     1232,
@@ -964,7 +964,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -983,7 +983,7 @@ export const dataBody = [
     'Plus de 10 ans',
     6,
     'Accueil, explication',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33114,
@@ -1002,7 +1002,7 @@ export const dataBody = [
     'Plus de 10 ans',
     8,
     "L'accueil, la qualité et le délais de livraison respecté.",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33160,
@@ -1021,7 +1021,7 @@ export const dataBody = [
     'Plus de 10 ans',
     null,
     'Acceuil - le conseil - la prise en charge',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33114,
@@ -1040,7 +1040,7 @@ export const dataBody = [
     'Depuis toujours',
     4,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33310,
@@ -1059,7 +1059,7 @@ export const dataBody = [
     'Moins de 5 ans',
     10,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -1078,7 +1078,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33920,
@@ -1097,7 +1097,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     'Accueil, conseil, adaption avec la clientèle',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33500,
@@ -1116,7 +1116,7 @@ export const dataBody = [
     'Moins de 5 ans',
     8,
     'Accueil \\nConseil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33270,
@@ -1135,7 +1135,7 @@ export const dataBody = [
     'Moins de 5 ans',
     8,
     'Accueil réalisé par une dame très compétente et avenante. Souriante, disponible, elle a pris le temps de nous conseiller.',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -1154,7 +1154,7 @@ export const dataBody = [
     'De 5 à 10 ans',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33300,
@@ -1173,7 +1173,7 @@ export const dataBody = [
     'Depuis toujours',
     5,
     'Très bel accueil et bon conseil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     17160,
@@ -1192,7 +1192,7 @@ export const dataBody = [
     'Plus de 10 ans',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -1211,7 +1211,7 @@ export const dataBody = [
     'Plus de 10 ans',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33270,
@@ -1230,7 +1230,7 @@ export const dataBody = [
     'Plus de 10 ans',
     7,
     "Très bon accueil, personnel sympathique. j'ai été bien conseillé.",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33270,
@@ -1249,7 +1249,7 @@ export const dataBody = [
     'Moins de 5 ans',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -1268,7 +1268,7 @@ export const dataBody = [
     'Moins de 5 ans',
     8,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33650,
@@ -1287,7 +1287,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33710,
@@ -1306,7 +1306,7 @@ export const dataBody = [
     'Moins de 5 ans',
     4,
     "Accueil chaleaureux,  à l'écoute de nos besoin,  délai respecté.",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33100,
@@ -1325,7 +1325,7 @@ export const dataBody = [
     'Moins de 5 ans',
     7,
     'Qualité',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33350,
@@ -1344,7 +1344,7 @@ export const dataBody = [
     'Moins de 5 ans',
     9,
     'Accueils, les conseils',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33600,
@@ -1363,7 +1363,7 @@ export const dataBody = [
     'Plus de 10 ans',
     7,
     "La conseillère qui m'a reçu était très accueillante, m'a bien renseigné sur les modèles et m'a donné des petits conseils.",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33330,
@@ -1382,7 +1382,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     'Accueil , le service , l’écoute et le sourire de personnel',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     16100,
@@ -1401,7 +1401,7 @@ export const dataBody = [
     'Depuis toujours',
     10,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33600,
@@ -1420,7 +1420,7 @@ export const dataBody = [
     'Plus de 10 ans',
     9,
     'Accueil et conseils',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33460,
@@ -1439,7 +1439,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     17160,
@@ -1458,7 +1458,7 @@ export const dataBody = [
     'Plus de 10 ans',
     5,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33300,
@@ -1477,7 +1477,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33620,
@@ -1496,7 +1496,7 @@ export const dataBody = [
     'Moins de 5 ans',
     6,
     'accueil, professionnalisme',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -1515,7 +1515,7 @@ export const dataBody = [
     'Plus de 10 ans',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33350,
@@ -1534,7 +1534,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -1572,7 +1572,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     "Les points appréciés lors de ma visite sont: l'accueil, conseils, qualités et le delais rapide.",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33230,
@@ -1591,7 +1591,7 @@ export const dataBody = [
     'Plus de 10 ans',
     5,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -1610,7 +1610,7 @@ export const dataBody = [
     'Depuis toujours',
     10,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33300,
@@ -1629,7 +1629,7 @@ export const dataBody = [
     'Depuis toujours',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33320,
@@ -1648,7 +1648,7 @@ export const dataBody = [
     'Plus de 10 ans',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33520,
@@ -1667,7 +1667,7 @@ export const dataBody = [
     'Depuis toujours',
     null,
     '#NOM?',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33520,
@@ -1686,7 +1686,7 @@ export const dataBody = [
     'Plus de 10 ans',
     8,
     'Disponibilité, conseils pertinents, délais rapide',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33190,
@@ -1705,7 +1705,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     'Accueil,  temps accordé pour bien conseiller, professionnalisme',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33800,
@@ -1724,7 +1724,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     'Accueil, écoute,  temps accorder pour nous conseiller et faire le bon choix avec les enfants, professionnalisme',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33800,
@@ -1743,7 +1743,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     'ACCUEIL - CONSEILS',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     16110,
@@ -1762,7 +1762,7 @@ export const dataBody = [
     'Depuis toujours',
     10,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33610,
@@ -1781,7 +1781,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33700,
@@ -1800,7 +1800,7 @@ export const dataBody = [
     'Depuis toujours',
     null,
     'Le conseil, la patience avec les enfants.',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33610,
@@ -1819,7 +1819,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     'Tout est bien',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33130,
@@ -1838,7 +1838,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     "l'accueil",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33390,
@@ -1857,7 +1857,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     'Très bon accueil. Excellents conseils',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33670,
@@ -1876,7 +1876,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     'L accueils et les conseils',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33500,
@@ -1895,7 +1895,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33970,
@@ -1914,7 +1914,7 @@ export const dataBody = [
     'Depuis toujours',
     5,
     'accueil très bien',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33200,
@@ -1933,7 +1933,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     'Bons conseils et excellent accueil. Délais conformes',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33710,
@@ -1952,7 +1952,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     'Tous impeccables',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33560,
@@ -1971,7 +1971,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33560,
@@ -1990,7 +1990,7 @@ export const dataBody = [
     'Depuis toujours',
     3,
     "Accueil,délai d'attente",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33600,
@@ -2009,7 +2009,7 @@ export const dataBody = [
     'Plus de 10 ans',
     8,
     'Vitesse et qualité',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33310,
@@ -2028,7 +2028,7 @@ export const dataBody = [
     'Moins de 5 ans',
     3,
     "une très bonne accueil venant de l'équipe . Très satisfait",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -2047,7 +2047,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     'Accueil\\nConseils\\nProfessionnalisme\\nSimplicité du personnel.',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33650,
@@ -2066,7 +2066,7 @@ export const dataBody = [
     'Plus de 10 ans',
     8,
     'Laccueil  conseil delai',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -2085,7 +2085,7 @@ export const dataBody = [
     'Plus de 10 ans',
     8,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -2104,7 +2104,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33530,
@@ -2123,7 +2123,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     'Accueil,conseil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33530,
@@ -2142,7 +2142,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33290,
@@ -2161,7 +2161,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     'Tout',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -2180,7 +2180,7 @@ export const dataBody = [
     'Plus de 10 ans',
     10,
     'Accueil chaleureux, conseils professionnels et attentionnés (notamment pour les enfants), délais respectés, service au top !',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33130,
@@ -2199,7 +2199,7 @@ export const dataBody = [
     'Plus de 10 ans',
     7,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     38121,
@@ -2218,7 +2218,7 @@ export const dataBody = [
     'Plus de 10 ans',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -2237,7 +2237,7 @@ export const dataBody = [
     'De 5 à 10 ans',
     7,
     "Accueil, le professionnalisme, l'écoute",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33760,
@@ -2256,7 +2256,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     'Tres bon accueil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33240,
@@ -2275,7 +2275,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     "J'ai tout aimé",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33450,
@@ -2294,7 +2294,7 @@ export const dataBody = [
     'Moins de 5 ans',
     9,
     'Accueil\\nLes qualités des conseils prodigués \\nLe professionnalisme',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33270,
@@ -2313,7 +2313,7 @@ export const dataBody = [
     'Plus de 10 ans',
     3,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33320,
@@ -2332,7 +2332,7 @@ export const dataBody = [
     'Plus de 10 ans',
     4,
     'Accueil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33620,
@@ -2351,7 +2351,7 @@ export const dataBody = [
     'Moins de 5 ans',
     7,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33700,
@@ -2370,7 +2370,7 @@ export const dataBody = [
     'Plus de 10 ans',
     10,
     'Accueil, conseil, qualité.',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33230,
@@ -2389,7 +2389,7 @@ export const dataBody = [
     'Depuis toujours',
     null,
     'Accueil, conseil, convivialité',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33670,
@@ -2408,7 +2408,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     'Tout est correct\\nMême le retour au magasin pour réglage',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33240,
@@ -2427,7 +2427,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33240,
@@ -2446,7 +2446,7 @@ export const dataBody = [
     'Plus de 10 ans',
     6,
     'Tt va bien',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33610,
@@ -2898,7 +2898,7 @@ export const dataBody = [
     2,
     'Depuis toujours',
     3,
-    'Bon accueil des opticiens et bons conseils',
+    'Bon accueil des pharmaciens et bons conseils',
     'Travail'
   ],
   [
@@ -3087,7 +3087,7 @@ export const dataBody = [
     'De 5 à 10 ans',
     10,
     'Accueil\\nConseil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33550,
@@ -3240,7 +3240,7 @@ export const dataBody = [
     5,
     'Cliente depuis plusieurs années, toujours satisfaite à chaque passage , que ce soit pour moi personnellement ou pour mes 3 filles ainsi que mon mari',
     ' que du positif à tous points de vue!',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     3300,
@@ -3259,7 +3259,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     'Accueil conseils qualité et les délais .',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -3278,7 +3278,7 @@ export const dataBody = [
     'Moins de 5 ans',
     6,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -3297,7 +3297,7 @@ export const dataBody = [
     'Plus de 10 ans',
     8,
     'Accueil  conseil professionnalisme et sourire. ..',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33800,
@@ -3316,7 +3316,7 @@ export const dataBody = [
     'Depuis toujours',
     3,
     'Accueil et qualité des conseils (Jessica)',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33530,
@@ -3335,7 +3335,7 @@ export const dataBody = [
     'Depuis toujours',
     5,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33110,
@@ -3354,7 +3354,7 @@ export const dataBody = [
     'Depuis toujours',
     5,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33200,
@@ -3373,7 +3373,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     "l'écoute, les conseils, la qualité du service, la gentillesse du personnel",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33700,
@@ -3392,7 +3392,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     'Accueil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -3411,7 +3411,7 @@ export const dataBody = [
     'Depuis toujours',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33300,
@@ -3430,7 +3430,7 @@ export const dataBody = [
     'Depuis toujours',
     3,
     'Il y a rien  dire les personnels son tous chaleureux ainsi que de bon conseil.',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -3449,7 +3449,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     'Très bonne accueil !',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33100,
@@ -3468,7 +3468,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     1232,
@@ -3487,7 +3487,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -3506,7 +3506,7 @@ export const dataBody = [
     'Plus de 10 ans',
     6,
     'Accueil, explication',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33114,
@@ -3525,7 +3525,7 @@ export const dataBody = [
     'Plus de 10 ans',
     8,
     "L'accueil, la qualité et le délais de livraison respecté.",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33160,
@@ -3544,7 +3544,7 @@ export const dataBody = [
     'Plus de 10 ans',
     null,
     'Acceuil - le conseil - la prise en charge',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33114,
@@ -3563,7 +3563,7 @@ export const dataBody = [
     'Depuis toujours',
     4,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33310,
@@ -3582,7 +3582,7 @@ export const dataBody = [
     'Moins de 5 ans',
     10,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -3601,7 +3601,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33920,
@@ -3620,7 +3620,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     'Accueil, conseil, adaption avec la clientèle',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33500,
@@ -3639,7 +3639,7 @@ export const dataBody = [
     'Moins de 5 ans',
     8,
     'Accueil \\nConseil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33270,
@@ -3658,7 +3658,7 @@ export const dataBody = [
     'Moins de 5 ans',
     8,
     'Accueil réalisé par une dame très compétente et avenante. Souriante, disponible, elle a pris le temps de nous conseiller.',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -3677,7 +3677,7 @@ export const dataBody = [
     'De 5 à 10 ans',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33300,
@@ -3696,7 +3696,7 @@ export const dataBody = [
     'Depuis toujours',
     5,
     'Très bel accueil et bon conseil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     17160,
@@ -3715,7 +3715,7 @@ export const dataBody = [
     'Plus de 10 ans',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -3734,7 +3734,7 @@ export const dataBody = [
     'Plus de 10 ans',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33270,
@@ -3753,7 +3753,7 @@ export const dataBody = [
     'Plus de 10 ans',
     7,
     "Très bon accueil, personnel sympathique. j'ai été bien conseillé.",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33270,
@@ -3772,7 +3772,7 @@ export const dataBody = [
     'Moins de 5 ans',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -3791,7 +3791,7 @@ export const dataBody = [
     'Moins de 5 ans',
     8,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33650,
@@ -3810,7 +3810,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33710,
@@ -3829,7 +3829,7 @@ export const dataBody = [
     'Moins de 5 ans',
     4,
     "Accueil chaleaureux,  à l'écoute de nos besoin,  délai respecté.",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33100,
@@ -3848,7 +3848,7 @@ export const dataBody = [
     'Moins de 5 ans',
     7,
     'Qualité',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33350,
@@ -3867,7 +3867,7 @@ export const dataBody = [
     'Moins de 5 ans',
     9,
     'Accueils, les conseils',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33600,
@@ -3886,7 +3886,7 @@ export const dataBody = [
     'Plus de 10 ans',
     7,
     "La conseillère qui m'a reçu était très accueillante, m'a bien renseigné sur les modèles et m'a donné des petits conseils.",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33330,
@@ -3905,7 +3905,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     'Accueil , le service , l’écoute et le sourire de personnel',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     16100,
@@ -3924,7 +3924,7 @@ export const dataBody = [
     'Depuis toujours',
     10,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33600,
@@ -3943,7 +3943,7 @@ export const dataBody = [
     'Plus de 10 ans',
     9,
     'Accueil et conseils',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33460,
@@ -3962,7 +3962,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     17160,
@@ -3981,7 +3981,7 @@ export const dataBody = [
     'Plus de 10 ans',
     5,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33300,
@@ -4000,7 +4000,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33620,
@@ -4019,7 +4019,7 @@ export const dataBody = [
     'Moins de 5 ans',
     6,
     'accueil, professionnalisme',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -4038,7 +4038,7 @@ export const dataBody = [
     'Plus de 10 ans',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33350,
@@ -4057,7 +4057,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -4095,7 +4095,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     "Les points appréciés lors de ma visite sont: l'accueil, conseils, qualités et le delais rapide.",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33230,
@@ -4114,7 +4114,7 @@ export const dataBody = [
     'Plus de 10 ans',
     5,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -4133,7 +4133,7 @@ export const dataBody = [
     'Depuis toujours',
     10,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33300,
@@ -4152,7 +4152,7 @@ export const dataBody = [
     'Depuis toujours',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33320,
@@ -4171,7 +4171,7 @@ export const dataBody = [
     'Plus de 10 ans',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33520,
@@ -4190,7 +4190,7 @@ export const dataBody = [
     'Depuis toujours',
     null,
     '#NOM?',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33520,
@@ -4209,7 +4209,7 @@ export const dataBody = [
     'Plus de 10 ans',
     8,
     'Disponibilité, conseils pertinents, délais rapide',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33190,
@@ -4228,7 +4228,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     'Accueil,  temps accordé pour bien conseiller, professionnalisme',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33800,
@@ -4247,7 +4247,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     'Accueil, écoute,  temps accorder pour nous conseiller et faire le bon choix avec les enfants, professionnalisme',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33800,
@@ -4266,7 +4266,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     'ACCUEIL - CONSEILS',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     16110,
@@ -4285,7 +4285,7 @@ export const dataBody = [
     'Depuis toujours',
     10,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33610,
@@ -4304,7 +4304,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33700,
@@ -4323,7 +4323,7 @@ export const dataBody = [
     'Depuis toujours',
     null,
     'Le conseil, la patience avec les enfants.',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33610,
@@ -4342,7 +4342,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     'Tout est bien',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33130,
@@ -4361,7 +4361,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     "l'accueil",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33390,
@@ -4380,7 +4380,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     'Très bon accueil. Excellents conseils',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33670,
@@ -4399,7 +4399,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     'L accueils et les conseils',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33500,
@@ -4418,7 +4418,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33970,
@@ -4437,7 +4437,7 @@ export const dataBody = [
     'Depuis toujours',
     5,
     'accueil très bien',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33200,
@@ -4456,7 +4456,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     'Bons conseils et excellent accueil. Délais conformes',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33710,
@@ -4475,7 +4475,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     'Tous impeccables',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33560,
@@ -4494,7 +4494,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33560,
@@ -4513,7 +4513,7 @@ export const dataBody = [
     'Depuis toujours',
     3,
     "Accueil,délai d'attente",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33600,
@@ -4532,7 +4532,7 @@ export const dataBody = [
     'Plus de 10 ans',
     8,
     'Vitesse et qualité',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33310,
@@ -4551,7 +4551,7 @@ export const dataBody = [
     'Moins de 5 ans',
     3,
     "une très bonne accueil venant de l'équipe . Très satisfait",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -4570,7 +4570,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     'Accueil\\nConseils\\nProfessionnalisme\\nSimplicité du personnel.',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33650,
@@ -4589,7 +4589,7 @@ export const dataBody = [
     'Plus de 10 ans',
     8,
     'Laccueil  conseil delai',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -4608,7 +4608,7 @@ export const dataBody = [
     'Plus de 10 ans',
     8,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33400,
@@ -4627,7 +4627,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33530,
@@ -4646,7 +4646,7 @@ export const dataBody = [
     'Depuis toujours',
     9,
     'Accueil,conseil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33530,
@@ -4665,7 +4665,7 @@ export const dataBody = [
     'Depuis toujours',
     6,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33290,
@@ -4684,7 +4684,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     'Tout',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -4703,7 +4703,7 @@ export const dataBody = [
     'Plus de 10 ans',
     10,
     'Accueil chaleureux, conseils professionnels et attentionnés (notamment pour les enfants), délais respectés, service au top !',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33130,
@@ -4722,7 +4722,7 @@ export const dataBody = [
     'Plus de 10 ans',
     7,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     38121,
@@ -4741,7 +4741,7 @@ export const dataBody = [
     'Plus de 10 ans',
     null,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33000,
@@ -4760,7 +4760,7 @@ export const dataBody = [
     'De 5 à 10 ans',
     7,
     "Accueil, le professionnalisme, l'écoute",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33760,
@@ -4779,7 +4779,7 @@ export const dataBody = [
     'Depuis toujours',
     8,
     'Tres bon accueil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33240,
@@ -4798,7 +4798,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     "J'ai tout aimé",
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33450,
@@ -4817,7 +4817,7 @@ export const dataBody = [
     'Moins de 5 ans',
     9,
     'Accueil\\nLes qualités des conseils prodigués \\nLe professionnalisme',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33270,
@@ -4836,7 +4836,7 @@ export const dataBody = [
     'Plus de 10 ans',
     3,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33320,
@@ -4855,7 +4855,7 @@ export const dataBody = [
     'Plus de 10 ans',
     4,
     'Accueil',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33620,
@@ -4874,7 +4874,7 @@ export const dataBody = [
     'Moins de 5 ans',
     7,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33700,
@@ -4893,7 +4893,7 @@ export const dataBody = [
     'Plus de 10 ans',
     10,
     'Accueil, conseil, qualité.',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33230,
@@ -4912,7 +4912,7 @@ export const dataBody = [
     'Depuis toujours',
     null,
     'Accueil, conseil, convivialité',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33670,
@@ -4931,7 +4931,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     'Tout est correct\\nMême le retour au magasin pour réglage',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33240,
@@ -4950,7 +4950,7 @@ export const dataBody = [
     'Depuis toujours',
     7,
     null,
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33240,
@@ -4969,7 +4969,7 @@ export const dataBody = [
     'Plus de 10 ans',
     6,
     'Tt va bien',
-    'Foire bordeaux'
+    'En ligne'
   ],
   [
     33610,
